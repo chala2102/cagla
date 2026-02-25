@@ -1,0 +1,4 @@
+Laptop,1000,Electronics,Premium
+T-Shirt,50,Clothing,Standard
+Book,20,Books,Budget
+Sofa,500,Home,Premium

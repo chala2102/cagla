@@ -1,0 +1,13 @@
+Failed login from 172.16.0.1
+Failed login from 10.0.0.5
+Suspicious user agent from 10.0.0.5
+Suspicious user agent from 192.168.1.10
+Suspicious user agent from 172.16.0.1
+Failed login from 10.0.0.99
+Failed login from 10.0.0.99
+Failed login from 10.0.0.99
+Failed login from 10.0.0.99
+Failed login from 10.0.0.99
+Suspicious user agent from 192.168.1.50
+Suspicious user agent from 192.168.1.50
+Brute force detected from 10.0.0.99 (5 attempts)

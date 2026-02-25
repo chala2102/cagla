@@ -1,0 +1,13 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": [
+        {
+            "path": "LAB.4.py",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "python.analysis.extraPaths": [
+        "./LABS/LAB.14.py/LAB.14.1.py"
+    ]
+}

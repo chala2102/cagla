@@ -1,0 +1,27 @@
+2026-02-23 17:36:29,327 - WARNING - HTTP Error found: 192.168.1.10 - - [23/Feb/2026:17:36:29 +0000] "GET /index.html HTTP/1.1" 403 123 "-" "sqlmap/1.6"
+2026-02-23 17:36:29,327 - WARNING - Suspicious user agent: 192.168.1.10
+2026-02-23 17:36:29,327 - WARNING - HTTP Error found: 10.0.0.5 - - [23/Feb/2026:17:36:29 +0000] "GET /admin HTTP/1.1" 404 123 "-" "sqlmap/1.6"
+2026-02-23 17:36:29,327 - WARNING - Suspicious user agent: 10.0.0.5
+2026-02-23 17:36:29,327 - WARNING - HTTP Error found: 192.168.1.20 - - [23/Feb/2026:17:36:29 +0000] "GET /index.html HTTP/1.1" 404 123 "-" "sqlmap/1.6"
+2026-02-23 17:36:29,329 - WARNING - Suspicious user agent: 192.168.1.20
+2026-02-23 17:36:29,329 - WARNING - HTTP Error found: 172.16.0.1 - - [23/Feb/2026:17:36:29 +0000] "POST /login HTTP/1.1" 404 123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2026-02-23 17:36:29,329 - WARNING - HTTP Error found: 192.168.1.20 - - [23/Feb/2026:17:36:29 +0000] "POST /submit HTTP/1.1" 401 123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2026-02-23 17:36:29,329 - WARNING - HTTP Error found: 192.168.1.10 - - [23/Feb/2026:17:36:29 +0000] "POST /submit HTTP/1.1" 500 123 "-" "sqlmap/1.6"
+2026-02-23 17:36:29,329 - WARNING - Suspicious user agent: 192.168.1.10
+2026-02-23 17:36:29,329 - WARNING - HTTP Error found: 172.16.0.1 - - [23/Feb/2026:17:36:29 +0000] "POST /submit HTTP/1.1" 401 123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2026-02-23 17:36:29,329 - WARNING - Suspicious user agent: 192.168.1.10
+2026-02-23 17:36:29,330 - WARNING - HTTP Error found: 172.16.0.1 - - [23/Feb/2026:17:36:29 +0000] "POST /submit HTTP/1.1" 401 123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2026-02-23 17:36:29,330 - WARNING - HTTP Error found: 10.0.0.5 - - [23/Feb/2026:17:36:29 +0000] "POST /login HTTP/1.1" 403 123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2026-02-23 17:36:29,330 - WARNING - HTTP Error found: 10.0.0.99 - - [23/Feb/2026:17:36:29 +0000] "POST /login HTTP/1.1" 401 123 "-" "Mozilla/5.0"
+2026-02-23 17:36:29,330 - WARNING - Failed login attempt from 10.0.0.99
+2026-02-23 17:36:29,330 - WARNING - HTTP Error found: 10.0.0.99 - - [23/Feb/2026:17:36:29 +0000] "POST /login HTTP/1.1" 401 123 "-" "Mozilla/5.0"
+2026-02-23 17:36:29,330 - WARNING - Failed login attempt from 10.0.0.99
+2026-02-23 17:36:29,330 - WARNING - HTTP Error found: 10.0.0.99 - - [23/Feb/2026:17:36:29 +0000] "POST /login HTTP/1.1" 401 123 "-" "Mozilla/5.0"
+2026-02-23 17:36:29,330 - WARNING - Failed login attempt from 10.0.0.99
+2026-02-23 17:36:29,330 - WARNING - HTTP Error found: 10.0.0.99 - - [23/Feb/2026:17:36:29 +0000] "POST /login HTTP/1.1" 401 123 "-" "Mozilla/5.0"
+2026-02-23 17:36:29,330 - WARNING - Failed login attempt from 10.0.0.99
+2026-02-23 17:36:29,330 - WARNING - HTTP Error found: 10.0.0.99 - - [23/Feb/2026:17:36:29 +0000] "POST /login HTTP/1.1" 401 123 "-" "Mozilla/5.0"
+2026-02-23 17:36:29,330 - WARNING - Failed login attempt from 10.0.0.99
+2026-02-23 17:36:29,330 - WARNING - Suspicious user agent: 192.168.1.50
+2026-02-23 17:36:29,330 - WARNING - Suspicious user agent: 192.168.1.50
+2026-02-23 17:36:29,330 - WARNING - Brute force attack from 10.0.0.99
