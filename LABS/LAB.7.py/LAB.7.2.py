@@ -2,7 +2,7 @@ import logging
 import random
 from datetime import datetime
 
-# ---------- LOGGING SETUP ----------
+
 log_filename = "analyzer_log_" + datetime.now().strftime("%Y%m%d_%H%M%S") + ".log"
 
 logging.basicConfig(
@@ -11,7 +11,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-# ---------- MOCK SERVER LOG GENERATOR ----------
+
 ips = ["192.168.1.10", "10.0.0.5", "172.16.0.1", "192.168.1.20"]
 requests_list = [
     'GET /index.html HTTP/1.1',
@@ -56,7 +56,7 @@ with open(log_file_name, "w") as f:
 
 print(f"{log_file_name} generated with mock log entries.")
 
-# ---------- LOG ANALYSIS ----------
+
 try:
     http_errors_count = 0
     failed_logins_count = 0
