@@ -3,10 +3,10 @@ from pydantic import BaseModel
 from typing import Optional
 from helpers import load_tasks, save_tasks, generate_id, current_timestamp
 
-# FastAPI uygulaması
+
 app = FastAPI(title="Task Manager API")
 
-# Task veri modeli
+
 class Task(BaseModel):
     id: int
     title: str
@@ -17,7 +17,7 @@ class Task(BaseModel):
     updated_at: Optional[str] = None
     notes: Optional[str] = None
 
-# Task oluşturma modeli (ID otomatik)
+
 class TaskCreate(BaseModel):
     title: str
     description: Optional[str] = None
@@ -29,7 +29,7 @@ class TaskCreate(BaseModel):
 def root():
     return {"message": "FastAPI Task Manager is running"}
 
-# Tüm taskları veya filtrelenmiş taskları getir
+
 @app.get("/tasks")
 def get_tasks(completed: Optional[bool] = None, priority: Optional[str] = None):
     tasks = load_tasks()
@@ -39,7 +39,7 @@ def get_tasks(completed: Optional[bool] = None, priority: Optional[str] = None):
         tasks = [t for t in tasks if t["priority"] == priority]
     return tasks
 
-# Tek task getir
+
 @app.get("/tasks/{id}")
 def get_task(id: int):
     tasks = load_tasks()
@@ -48,7 +48,7 @@ def get_task(id: int):
             return task
     raise HTTPException(status_code=404, detail="Task not found")
 
-# Task oluştur
+
 @app.post("/tasks")
 def create_task(task: TaskCreate):
     tasks = load_tasks()
@@ -67,7 +67,7 @@ def create_task(task: TaskCreate):
     save_tasks(tasks)
     return {"message": "Task added successfully", "task": new_task}
 
-# Task güncelle
+
 @app.put("/tasks/{id}")
 def update_task(id: int, updated_task: Task):
     tasks = load_tasks()
@@ -80,7 +80,7 @@ def update_task(id: int, updated_task: Task):
             return {"message": "Task updated successfully", "task": updated_dict}
     raise HTTPException(status_code=404, detail="Task not found")
 
-# Tek task sil
+
 @app.delete("/tasks/{id}")
 def delete_task(id: int):
     tasks = load_tasks()
@@ -90,13 +90,13 @@ def delete_task(id: int):
     save_tasks(filtered)
     return {"message": "Task deleted successfully"}
 
-# Tüm taskları sil
+
 @app.delete("/tasks")
 def delete_all_tasks():
     save_tasks([])
     return {"message": "All tasks cleared"}
 
-# Tasklarda arama
+
 @app.get("/tasks/search")
 def search_tasks(query: str = Query(..., min_length=1)):
     tasks = load_tasks()
@@ -106,7 +106,7 @@ def search_tasks(query: str = Query(..., min_length=1)):
     ]
     return results
 
-# Task istatistikleri
+
 @app.get("/tasks/stats")
 def task_stats():
     tasks = load_tasks()
@@ -127,7 +127,7 @@ def task_stats():
         "most_common_priority": most_common_priority
     }
 
-# Opsiyonel: Tüm endpoint URL’lerini terminalde listele
+
 if __name__ == "__main__":
     for route in app.routes:
         print(f"Path: {route.path}, Methods: {route.methods}")
